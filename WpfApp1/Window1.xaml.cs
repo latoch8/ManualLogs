@@ -15,27 +15,18 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaction logic for Setings.xaml
+    /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Setings : Window
+    public partial class Window1 : Window
     {
-        public Setings(MainWindow main)
+        public Window1()
         {
             InitializeComponent();
-            Main = main;
-            Draw.DrawMainPanel(Tablica, 5, 4);
         }
 
-        MainWindow Main;
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.Close();        
-        }
 
-        private void Okno_Closed(object sender, EventArgs e)
-        {
-            Main.IsEnabled = true;
         }
     }
 }

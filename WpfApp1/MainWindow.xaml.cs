@@ -101,7 +101,7 @@ namespace WpfApp1
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Setings set = new Setings(this);
-            this.Hide();
+            this.IsEnabled = false;
             set.Show();
         }
 
